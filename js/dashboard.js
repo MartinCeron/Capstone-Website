@@ -225,7 +225,7 @@ function createPPGChart() {
       elements: { line: { tension: 0.4 } },
       scales: {
         x: { display: true },
-        y: { min: 0, max: 1000 }
+        y: { min: 0, max: 1200 }
       }
     }
   });
