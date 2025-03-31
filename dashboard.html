@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Cardiovascular Tracker</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- JS Logic -->
+  <script type="module" src="js/dashboard.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="dashboard.html">
+        <img src="images/logo.png" alt="Logo" />
+      </a>
+      <span class="app-title">Cardiovascular Biometric Tracker</span>
+    </div>
+    <div class="user-controls">
+      <span id="usernameDisplay">User</span>
+      <button class="logout-btn" id="logoutBtn">Logout</button>
+    </div>
+  </header>
+  
+
+  <main class="dashboard-container">
+    <!-- First Row -->
+    <div class="row">
+      <!-- ECG Graph -->
+      <div class="sensor-box large-box ecg-box" onclick="location.href='ecg.html'" style="cursor: pointer;">
+        <div class="ecg-graph">
+          <h2>ECG Signal</h2>
+          <canvas id="ecgDashboardChart"></canvas>
+        </div>
+        <span class="sensor-value" id="dashboardECGValue">-- V</span>
+      </div>
+  
+      <!-- SpO2 -->
+      <div class="sensor-box small-box">
+        <h2>SpO₂</h2>
+        <span class="sensor-value" id="dashboardSpO2">-- %</span>
+      </div>
+  
+      <!-- Temperature -->
+      <div class="sensor-box small-box" onclick="location.href='temperature.html'" style="cursor: pointer;">
+        <h2>Temperature</h2>
+        <span class="sensor-value" id="dashboardTemperature">-- °C</span>
+      </div>
+    </div>
+  
+    <!-- Second Row -->
+    <div class="row">
+      <!-- PPG Graph -->
+      <div class="sensor-box large-box ppg-box" onclick="location.href='ppg.html'" style="cursor: pointer;">
+        <div class="ppg-graph">
+          <h2>PPG Signal</h2>
+          <canvas id="ppgDashboardChart"></canvas>
+        </div>
+        <span class="sensor-value" id="ppgValue">--</span>
+      </div>
+  
+      <!-- Confidence -->
+      <div class="sensor-box small-box">
+        <h2>Confidence</h2>
+        <span class="sensor-value" id="dashboardConfidence">-- %</span>
+      </div>
+  
+      <!-- Heart Rate -->
+      <div class="sensor-box small-box" onclick="location.href='ppg.html'" style="cursor: pointer;">
+        <h2>Heart Rate</h2>
+        <span class="sensor-value2" id="dashboardHeartRate">-- BPM</span>
+      </div>
+    </div>
+  </main>
+  
+  
+</body>
+</html>

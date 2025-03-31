@@ -1,0 +1,124 @@
+/* ✅ Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* ✅ General Page Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #a7bdc3, #7a8f99);
+}
+
+/* ✅ Header Styles */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #455a64;
+    padding: 15px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ✅ Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ✅ Sign-Up Form Box */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* 🔹 Matched Login Box */
+.signup-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 380px;  /* Consistent max-width */
+    min-width: 280px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+/* ✅ Form Title */
+.signup-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* ✅ Form Inputs */
+form input {
+    width: calc(100% - 24px); /* Adjusts for padding */
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+form input:focus {
+    border: 1px solid #007BFF;
+    outline: none;
+}
+
+/* ✅ Sign Up Button */
+#signup-btn {
+    background: #007BFF;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+#signup-btn:hover {
+    background: #0056b3;
+    transform: scale(1.03);
+}
+
+/* ✅ Login Link */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+p a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
